@@ -1,0 +1,13 @@
+{
+  "extends": "@26f3861b-5297-4e7c-92fa-6d4e397ff7fe/config/tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "paths": {
+      "@26f3861b-5297-4e7c-92fa-6d4e397ff7fe/ui/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}

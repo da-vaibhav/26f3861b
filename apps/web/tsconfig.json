@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "types": ["vite/client"],
+    "rootDirs": ["."],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@26f3861b-5297-4e7c-92fa-6d4e397ff7fe/ui/*": ["../../packages/ui/src/*"]
+    }
+  }
+}

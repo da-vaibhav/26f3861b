@@ -1,0 +1,12 @@
+{
+  "extends": "@26f3861b-5297-4e7c-92fa-6d4e397ff7fe/config/tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "jsx": "react-jsx"
+  }
+}

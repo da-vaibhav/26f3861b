@@ -1,0 +1,38 @@
+{
+  "name": "26f3861b-5297-4e7c-92fa-6d4e397ff7fe",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "check-types": "pnpm -r check-types",
+    "dev:web": "pnpm --filter web dev",
+    "dev:server": "pnpm --filter server dev",
+    "db:push": "pnpm --filter @26f3861b-5297-4e7c-92fa-6d4e397ff7fe/db db:push",
+    "db:studio": "pnpm --filter @26f3861b-5297-4e7c-92fa-6d4e397ff7fe/db db:studio",
+    "db:generate": "pnpm --filter @26f3861b-5297-4e7c-92fa-6d4e397ff7fe/db db:generate",
+    "db:migrate": "pnpm --filter @26f3861b-5297-4e7c-92fa-6d4e397ff7fe/db db:migrate",
+    "db:start": "pnpm --filter @26f3861b-5297-4e7c-92fa-6d4e397ff7fe/db db:start",
+    "db:watch": "pnpm --filter @26f3861b-5297-4e7c-92fa-6d4e397ff7fe/db db:watch",
+    "db:stop": "pnpm --filter @26f3861b-5297-4e7c-92fa-6d4e397ff7fe/db db:stop",
+    "db:down": "pnpm --filter @26f3861b-5297-4e7c-92fa-6d4e397ff7fe/db db:down",
+    "check": "oxlint && oxfmt --write"
+  },
+  "dependencies": {
+    "@26f3861b-5297-4e7c-92fa-6d4e397ff7fe/env": "workspace:*",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@26f3861b-5297-4e7c-92fa-6d4e397ff7fe/config": "workspace:*",
+    "@types/node": "catalog:",
+    "oxfmt": "^0.26.0",
+    "oxlint": "^1.41.0",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@10.30.0"
+}
